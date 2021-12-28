@@ -1,0 +1,156 @@
+body {
+  .searchcandcontent {
+    .searchareadiv {
+      padding: 25px;
+      border-radius: 16px;
+      background-color: #fff;
+      .srchdiv {
+        display: flex;
+        justify-content: space-between;
+        .srchinput {
+          display: flex;
+          background-color: #fff;
+          box-shadow: 0px 8px 39px #24579933;
+          border-radius: 16px;
+          padding: 15px;
+          flex-basis: 58%;
+          .srchsvgdiv {
+            padding-right: 12px;
+            padding-top: 3px;
+          }
+          .srcharea_inputdiv {
+            margin: 0;
+            .MuiInput-underline {
+              &:before,
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+        .locateinput {
+          display: flex;
+          background-color: #fff;
+          box-shadow: 0px 8px 39px #24579933;
+          border-radius: 16px;
+          padding: 15px;
+          flex-basis: 28%;
+          .locatesvgdiv {
+            padding-right: 12px;
+            padding-top: 3px;
+          }
+          .srcharea_inputdiv {
+            margin: 0;
+            .MuiInputBase-root {
+              &::after,
+              &::before {
+                display: none;
+              }
+            }
+            .MuiChip-root {
+              background-color: #2a5798;
+              color: #fff;
+              .MuiChip-deleteIcon {
+                color: #fff;
+              }
+            }
+          }
+        }
+        .srchbutton {
+          flex-basis: 10%;
+          button {
+            width: 100%;
+            padding: 19px 0;
+            text-transform: none;
+          }
+        }
+      }
+      .label {
+        padding-bottom: 10px;
+        display: block;
+      }
+    }
+  }
+  .filtercomponent {
+    button {
+      border: none;
+    }
+    select {
+      border-color: #d1e5ff;
+    }
+    input[type="checkbox"] {
+      background-color: #e7f1fd;
+      border-color: #d1e5ff;
+      padding: 10px;
+      box-shadow: none;
+      &:checked {
+        background-color: #2a5798;
+        box-shadow: none;
+      }
+    }
+    .range {
+      datalist {
+        display: flex;
+        justify-content: space-between;
+        color: #1c1b1b;
+        font-size: 12px;
+        width: 100%;
+        option {
+          background-color: #e7f1fd;
+          padding: 2px 6px;
+          border-radius: 8px;
+        }
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .filtercomponent {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 18px #24579929;
+    .dis_flex {
+      justify-content: space-between;
+    }
+    .filterdiv {
+      .filterarea {
+        div {
+          padding: 15px;
+          padding-bottom: 8px !important;
+          border-bottom: 1px solid #d7dde5;
+        }
+      }
+    }
+    .applyfilterdiv {
+      padding: 15px !important;
+      padding-bottom: 8px !important;
+    }
+    .filterdivsingleinput {
+      padding: 15px !important;
+      padding-bottom: 8px !important;
+    }
+    .filterdivtwoinputs {
+      padding: 15px !important;
+      padding-bottom: 8px !important;
+      div {
+        button {
+          text-transform: none;
+        }
+      }
+    }
+    .filterdivcheckboxlist {
+      padding: 15px !important;
+      padding-bottom: 8px !important;
+      a {
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+    .filterdivslider {
+      padding: 15px !important;
+      padding-bottom: 8px !important;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+body .postajobcontent .pagetitle {
+  letter-spacing: 0px;
+  font-size: 55px;
+  line-height: 100px;
+  font-weight: bold;
+  color: #1c1b1b;
+  margin: 25px 0;
+  display: block;
+}
+
+body .postajobcontent .bg_img {
+  width: 300px;
+}
+
+body .postajobcontent .formdiv {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+body .postajobcontent .formdiv .appbar {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .postajobcontent .formdiv .appbar .appbartab .MuiTabs-flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .postajobcontent .formdiv .appbar .appbartab .MuiTabs-flexContainer .appbar_btn {
+  background-color: #e7f1fd;
+  color: #1c1b1b;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  min-width: 49%;
+  border-radius: 8px;
+  text-transform: initial;
+}
+
+body .postajobcontent .formdiv .appbar .appbartab .MuiTabs-flexContainer .appbar_btn.Mui-selected {
+  background-color: #2a5798;
+  color: #fff;
+}
+
+body .postajobcontent .formdiv .appbar .appbartab .MuiTabs-indicator {
+  display: none;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .label {
+  padding-bottom: 10px;
+  display: block;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .MuiGrid-container {
+  padding: 0 0 12px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .buttonarea {
+  margin-top: 15px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .skillsdiv {
+  padding-top: 12px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .jddiv {
+  padding-top: 12px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .jddiv .jdarea .jddivcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .jddiv .jdarea .jddivcont .BlueSelectDropdown {
+  width: 70%;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .jddiv .jdarea .jddivcont button.templatebtn {
+  color: #fff;
+  padding: 8px 16px;
+  text-transform: none;
+  border-radius: 8px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .jddiv .jdarea .messagebox textarea {
+  resize: none;
+  padding: 12px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .row {
+  padding: 0 0 12px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .row .radio_label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1b1b;
+  display: inline-block;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .row .radio_label .radio_label_normal {
+  font-size: 14px;
+  color: #1c1b1b;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .buttonrow {
+  padding-top: 15px;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .buttonrow .viewbtn {
+  background-color: #e7f1fd;
+  border: 2px dotted #2a5798;
+  color: #2a5798;
+  padding: 12px;
+  border-radius: 16px;
+  text-transform: none;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .buttonrow .savebtn {
+  background-color: #e7f1fd;
+  border: 1px solid #2a5798;
+  color: #2a5798;
+  padding: 12px;
+  border-radius: 16px;
+  text-transform: none;
+}
+
+body .postajobcontent .formdiv .appbar_tabpanel .MuiBox-root .buttonrow .postbtn {
+  background-color: #2a5798;
+  border: 1px solid #2a5798;
+  color: #fff;
+  padding: 12px;
+  border-radius: 16px;
+  text-transform: none;
+}
+
+body .successimg {
+  text-align: center;
+}
+/*# sourceMappingURL=PostAJob.css.map */

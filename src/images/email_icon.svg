@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_755" data-name="Group 755" transform="translate(-217 -410)">
+    <g id="Rectangle_481" data-name="Rectangle 481" transform="translate(217 410)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+    </g>
+    <g id="email_1" data-name="email 1" transform="translate(216.616 409.744)">
+      <g id="Group_160" data-name="Group 160" transform="translate(2 5.333)">
+        <path id="Vector" d="M19.764,6.611A2.163,2.163,0,0,1,18.1,7.39H1.661A2.163,2.163,0,0,1,0,6.611L7.935,0l.822.562a1.981,1.981,0,0,0,2.25,0L11.829,0Z" transform="translate(0.502 6.455)" fill="#f8b432"/>
+        <path id="Vector-2" data-name="Vector" d="M20.007.943,11.95,6.455l-.822.562a1.981,1.981,0,0,1-2.25,0l-.822-.562L0,.935A2.173,2.173,0,0,1,1.783,0H18.224A2.135,2.135,0,0,1,20.007.943Z" transform="translate(0.381 0)" fill="#d48e07"/>
+        <g id="Group" transform="translate(0 0.935)">
+          <path id="Vector-3" data-name="Vector" d="M8.437,5.521.5,12.132A2.154,2.154,0,0,1,0,10.747V1.229A2.132,2.132,0,0,1,.381,0Z" transform="translate(0)" fill="#f8b432"/>
+          <path id="Vector-4" data-name="Vector" d="M8.437,1.22v9.519a2.154,2.154,0,0,1-.5,1.385L0,5.512,8.056,0A2.125,2.125,0,0,1,8.437,1.22Z" transform="translate(12.331 0.009)" fill="#f8b432"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,423 @@
+body {
+  .personal_details {
+    .closearea {
+      padding: 25px;
+      border-bottom: 1px solid #d7dde5;
+      .closediv {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .detailsdiv {
+      height: 590px;
+      overflow-y: scroll;
+      /* width */
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        border-radius: 50px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 50px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #dddddd;
+        border-radius: 50px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      padding: 25px 25px 0;
+      .detailsrow {
+        display: flex;
+        padding-bottom: 15px;
+        .profileimg {
+          width: 125px;
+          height: 125px;
+        }
+        .heading {
+          font-size: 30px;
+          line-height: 1.1em;
+          color: #2a5798;
+          font-weight: 700;
+        }
+        .Namediv {
+          margin-left: 12px;
+          .name {
+            font-size: 22px;
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
+          }
+          .infotext {
+            font-size: 16px;
+            color: #2a5798;
+            display: block;
+            margin-bottom: 8px;
+          }
+          .otherdet {
+            display: flex;
+            .detdiv {
+              margin-right: 25px;
+              span {
+                display: block;
+              }
+              .title {
+                font-size: 14px;
+                color: #2a5798;
+                margin-bottom: 8px;
+              }
+              .subtext {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .detdiv {
+          margin-right: 25px;
+          span {
+            display: block;
+          }
+          .title {
+            font-size: 14px;
+            color: #2a5798;
+            margin-bottom: 8px;
+          }
+          .subtext {
+            font-size: 16px;
+          }
+        }
+      }
+      .langrow {
+        padding-bottom: 15px;
+        .langdiv {
+          display: flex;
+          .detdiv {
+            margin-right: 12px;
+            span {
+              display: block;
+            }
+            .subtext {
+              font-size: 16px;
+            }
+            .reading {
+              ul {
+                display: flex;
+                li {
+                  margin-right: 8px;
+                  background-color: #f6b333;
+                  border-radius: 8px;
+                  span {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        span {
+          display: block;
+        }
+        .title {
+          font-size: 14px;
+          color: #2a5798;
+          margin-bottom: 8px;
+        }
+      }
+      .socialrow {
+        padding-bottom: 15px;
+        span {
+          display: block;
+        }
+        .title {
+          font-size: 14px;
+          color: #2a5798;
+          margin-bottom: 8px;
+        }
+        .detdiv {
+          .socialul {
+            ul {
+              padding-left: 0;
+              display: flex;
+              flex-wrap: wrap;
+              li {
+                width: fit-content;
+                margin-right: 12px;
+                padding-left: 0;
+                a {
+                  color: #1c1b1b;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .otherdetailstab {
+      .divtabroot {
+        background-color: transparent;
+        box-shadow: none;
+        .MuiTabs-flexContainer {
+          justify-content: space-between;
+          .personaltab {
+            width: 32%;
+            max-width: 32%;
+            min-width: fit-content;
+            background-color: #e7f1fd;
+            color: #1c1b1b;
+            border-radius: 8px;
+            font-weight: 700;
+          }
+          .personaltab.Mui-selected {
+            background-color: #2a5798;
+            color: #fff;
+          }
+        }
+        .MuiTabs-indicator {
+          display: none;
+        }
+      }
+    }
+    .workexptab,
+    .eduexptab,
+    .otherexptab {
+      .MuiBox-root {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        .heading_title {
+          font-size: 25px;
+          line-height: 1.1em;
+          color: #2a5798;
+          font-weight: 700;
+          display: block;
+          margin-bottom: 10px;
+          font-family: "Lora", serif;
+        }
+        .reading {
+          margin-bottom: 15px;
+          ul {
+            display: flex;
+            li {
+              margin-right: 8px;
+              background-color: #f6b333;
+              border-radius: 8px;
+              width: fit-content;
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .tabdivcont {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          .tableft {
+            flex-basis: 45%;
+            .conttab {
+              display: flex;
+              .num {
+                color: #fff;
+                background-color: #2a5798;
+                border-radius: 50%;
+                height: fit-content;
+                padding: 6px 8px;
+              }
+              ul {
+                padding-top: 0;
+                li {
+                  padding-top: 0;
+                  .heading {
+                    font-size: 16px;
+                  }
+                  .subtext {
+                    font-size: 16px;
+                    color: #546984;
+                  }
+                }
+              }
+            }
+          }
+          .tabright {
+            flex-basis: 55%;
+            .heading {
+              font-size: 16px;
+              font-weight: 700;
+              display: block;
+              margin-bottom: 8px;
+            }
+            .subtext {
+              font-size: 16px;
+              color: #2a5798;
+              display: block;
+              margin-bottom: 8px;
+            }
+
+            ul.workareaul {
+              padding-top: 0;
+              li {
+                position: relative;
+                padding-top: 0;
+                .subtext {
+                  font-size: 16px;
+                  color: #1c1b1b;
+                }
+                &::after{
+                  position: absolute;
+                  content: '';
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 20px;
+                  background-color: #000;
+                  top: 7px;
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .downloaddiv {
+      padding: 0 25px 25px;
+      .btndiv {
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 49%;
+          flex-basis: 49%;
+          background-color: #2a5798;
+          padding: 12px 0;
+          border-radius: 8px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .personal_details {
+      .detailsdiv {
+        .headingcontdiv {
+          display: block;
+          .heading {
+            margin-bottom: 15px;
+            display: block;
+          }
+        }
+        .detailsrow {
+          .Namediv {
+            .otherdet {
+              display: none;
+            }
+          }
+        }
+        .otherdetareabot {
+          display: block;
+          .mobshowdiv {
+            display: block;
+            .detdiv {
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .langrow {
+          .langdiv {
+            display: block;
+            .detdiv {
+              .reading {
+                ul {
+                  li {
+                    justify-content: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .socialrow {
+          .detdiv {
+            .socialul {
+              ul {
+                display: block;
+                li {
+                  width: 100%;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+        }
+        .otherdetailstab {
+          .divtabroot {
+            .MuiTabs-scroller {
+              white-space: unset;
+              .MuiTabs-flexContainer {
+                .personaltab {
+                  width: 100%;
+                  max-width: 100%;
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+        .workexptab,
+        .eduexptab,
+        .otherexptab {
+          .MuiBox-root {
+            .tabdivcont {
+              display: block;
+              .tableft {
+                flex-basis: 100%;
+              }
+              .tabright {
+                flex-basis: 100%;
+                padding-left: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .personal_details {
+      .buttongrp {
+        button {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+      .downloaddiv {
+        padding: 0 25px 0;
+        .btndiv {
+          display: block;
+
+          button {
+            width: 100%;
+            flex-basis: 100%;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .otherdetailstab {
+        .divtabroot {
+          .MuiTabs-flexContainer{
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}

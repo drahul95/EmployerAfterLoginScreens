@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="fluent:add-circle-20-regular" transform="translate(-1.667 -1.667)">
+    <g id="Group" transform="translate(1.667 1.667)">
+      <path id="Vector" d="M0,10A1.25,1.25,0,0,1,1.25,8.75h7.5V1.25a1.25,1.25,0,1,1,2.5,0v7.5h7.5a1.25,1.25,0,1,1,0,2.5h-7.5v7.5a1.25,1.25,0,1,1-2.5,0v-7.5H1.25A1.25,1.25,0,0,1,0,10Z" transform="translate(0 0)" fill="#2a5798"/>
+    </g>
+  </g>
+</svg>

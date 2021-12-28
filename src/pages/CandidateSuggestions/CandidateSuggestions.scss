@@ -1,0 +1,287 @@
+body {
+  .candidatesuggestionscontent {
+    padding-right: 50px;
+    .pagetitle {
+      letter-spacing: 0px;
+      font-size: 45px;
+      line-height: 80px;
+      font-weight: bold;
+      color: #1c1b1b;
+      margin: 25px 0;
+      display: block;
+    }
+    .bg_img {
+      width: 48%;
+    }
+    .commonul {
+      .bolddiv {
+        span {
+          font-weight: 700;
+        }
+      }
+      span {
+        font-size: 0.875rem;
+      }
+    }
+    .sortbybtn {
+      background-color: transparent;
+      box-shadow: none;
+      color: #1c1b1b;
+      &:hover {
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+    button {
+      text-transform: none;
+    }
+    .listarea {
+      .button-area {
+        justify-content: space-between;
+        button {
+          flex-basis: 48%;
+        }
+      }
+    }
+    .BlueSelectDropdown {
+      .noBeforeAfter {
+        padding: 10px;
+      }
+    }
+    .infodiv2 {
+      padding: 0 !important;
+      .MuiButton-startIcon {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    
+    .savedboxdiv {
+      background-color: #e7f1fd;
+      border: 1px solid #d1e5ff;
+      border-radius: 16px;
+      padding: 20px;
+      .titlediv {
+        .heading {
+          font-size: 18px;
+          display: block;
+          font-weight: 700;
+        }
+        .subheading {
+          font-size: 14px;
+          color: #2a5798;
+          display: block;
+        }
+      }
+      .iconreq {
+        padding-right: 20px;
+        ul {
+          padding-bottom: 0;
+          li {
+            font-size: 0.875rem;
+          }
+        }
+      }
+      .leftarrowbtn {
+        padding-right: 16px !important;
+      }
+      .rightarrowbtn {
+        padding-left: 16px !important;
+      }
+      .buttonbox {
+        button {
+          padding: 10px 26px !important;
+        }
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    .candidatesuggestionscontent {
+      .listarea {
+        .MuiGrid-grid-xl-4 {
+          flex-grow: 0;
+          max-width: 33.333333%;
+          flex-basis: 33.333333%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1600px) {
+    .candidatesuggestionscontent {
+      .bg_img {
+        width: 70%;
+      }
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+    .candidatesuggestionscontent {
+      .sortbybtn {
+        width: 40px;
+        padding: 0;
+        min-width: 0px;
+        overflow: hidden;
+        height: 30px;
+        padding-left: 40px;
+      }
+      .gogsheet_csvarea {
+        float: right;
+      }
+      .sortbydiv {
+        margin: 0 0 0 auto;
+        width: 250px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    .candidatesuggestionscontent {
+      padding-right: 8px;
+      .savedboxdiv {
+        .buttonbox {
+          button {
+            padding: 10px 13px !important;
+            text-indent: -9999em;
+            text-transform: uppercase;
+            svg {
+              position: relative;
+              left: 6px;
+            }
+          }
+        }
+      }
+      .jdlistul {
+        display: block;
+      }
+      .sugcandidiv {
+        .topdiv {
+          .cont {
+            .buttondiv {
+              button {
+                padding: 10px 13px !important;
+                text-indent: -9999em;
+                text-transform: uppercase;
+                svg {
+                  position: relative;
+                  left: 6px;
+                }
+                svg.download-white {
+                  left: 0px;
+                }
+              }
+            }
+          }
+        }
+        .multi-selection {
+          flex-direction: column-reverse;
+          .buttondiv {
+            margin-top: 15px;
+          }
+        }
+      }
+      .sortbydiv {
+        width: 320px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1279px) {
+    .candidatesuggestionscontent {
+      .bg_img {
+        display: none;
+      }
+      .autocompdiv {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .candidatesuggestionscontent {
+      .pagetitle {
+        line-height: 1.1em;
+      }
+      .savedboxdiv {
+        .contentdiv {
+          display: block;
+          .titlediv {
+            margin-bottom: 15px;
+          }
+          .buttonbox {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px !important;
+          }
+        }
+        .iconreq ul {
+          padding-bottom: 15px;
+          li {
+            display: block;
+          }
+        }
+        .numcandsugg {
+          align-items: center;
+          span {
+            margin-top: 0 !important;
+          }
+        }
+        .rightarrowbtn {
+          padding-left: 8px !important;
+        }
+        .leftarrowbtn {
+          padding-right: 8px !important;
+        }
+      }
+      .sugcandidiv {
+        .topdiv {
+          .cont {
+            .buttondiv {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              .infodiv2 {
+                padding: 0 !important;
+                min-width: 15px;
+              }
+              button {
+                margin: 0 0 15px !important;
+              }
+            }
+          }
+        }
+        .multi-selection {
+          .buttondiv {
+            display: block;
+            width: 100%;
+            button {
+              width: 100%;
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .candidatesuggestionscontent {
+      .autocompdiv {
+        .autocompdivarea {
+          display: block;
+          .WhiteSelectDropdown {
+            margin-right: 0 !important;
+          }
+          button.redcolor {
+            margin: 15px 0;
+            width: 100%;
+            padding: 15px;
+          }
+        }
+        .gogsheet_csvarea {
+          float: none;
+          display: block !important;
+          button {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}

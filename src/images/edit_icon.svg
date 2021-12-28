@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="Group_6725" data-name="Group 6725" transform="translate(-183 -389)">
+    <g id="Rectangle_480" data-name="Rectangle 480" transform="translate(183 389)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="33" height="33" stroke="none"/>
+      <rect x="0.5" y="0.5" width="32" height="32" fill="none"/>
+    </g>
+    <g id="fluent:edit-20-regular" transform="translate(190.014 396.015)">
+      <g id="Group" transform="translate(0 0)">
+        <path id="Vector" d="M13.148.951A3.254,3.254,0,0,1,17.9,5.389l-.152.164L6.519,16.784a2.34,2.34,0,0,1-.845.54l-.193.062L.74,18.679A.585.585,0,0,1,0,18.053l.019-.094,1.293-4.74a2.317,2.317,0,0,1,.465-.889l.137-.15L13.148.951Zm-1.005,2.66-9.4,9.4a1.169,1.169,0,0,0-.251.375l-.049.144L1.418,17.281l3.755-1.023a1.169,1.169,0,0,0,.279-.117l.125-.084.115-.1,9.4-9.4L12.143,3.611Zm4.781-1.833a2.085,2.085,0,0,0-2.808-.129l-.14.129L12.969,2.783l2.946,2.949,1.008-1.005a2.085,2.085,0,0,0,.129-2.808l-.129-.14Z" transform="translate(0 0)" fill="#1c1b1b"/>
+      </g>
+    </g>
+  </g>
+</svg>

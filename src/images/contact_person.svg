@@ -1,0 +1,15 @@
+<svg id="Group_4519" data-name="Group 4519" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="Rectangle_480" data-name="Rectangle 480" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+    <rect width="28" height="28" stroke="none"/>
+    <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+  </g>
+  <g id="Asset_1_16" data-name="Asset 1 16" transform="translate(6.458 1.29)">
+    <g id="Group_561" data-name="Group 561" transform="translate(-5.984 -2.328)">
+      <path id="Vector" d="M.255.03C2.964-.284,5.807,1.9,6.446,4.889a6.22,6.22,0,0,1-4.1,7.04c-.236.083-.488.132-.723.2a.219.219,0,0,1-.2.066.838.838,0,0,0,.37.215A9.69,9.69,0,0,1,10,21.051c.034.611-.1.843-.791.843-2.995-.033-5.989,0-8.967,0l.017-.05C-.031,21.6,0,21.25,0,20.919V.956A1.363,1.363,0,0,1,.137.146.771.771,0,0,1,.255.03Z" transform="translate(13.014 4.125)" fill="#f6b333"/>
+      <path id="Vector-2" data-name="Vector" d="M8.382,12.2A6.2,6.2,0,0,1,3.5,5.685,6.209,6.209,0,0,1,8.987.1c.252-.033.5-.066.74-.1a.241.241,0,0,0,.017.116V.132a1.787,1.787,0,0,0-.084.892v20a1.616,1.616,0,0,1-.084.892c-2.995,0-5.989,0-8.984.033C0,21.947-.013,21.7,0,21.253a9.676,9.676,0,0,1,8.21-8.759C8.18,12.329,8.785,12.543,8.382,12.2Z" transform="translate(3.527 4.039)" fill="#f6b333"/>
+      <path id="Vector-3" data-name="Vector" d="M.723.281A.809.809,0,0,1,0,0H.538C.589.083.656.182.723.281Z" transform="translate(14.095 16.237)" fill="#88a8f7"/>
+      <path id="Vector-4" data-name="Vector" d="M.019,21.765V1.025C.019.678-.082.3.187,0q0,10.882.017,21.781A.7.7,0,0,0,.019,21.765Z" transform="translate(13.09 4.186)" fill="#f6b333"/>
+      <path id="Vector-5" data-name="Vector" d="M.168.016A1.015,1.015,0,0,1,.824.1.823.823,0,0,1,0,.314C.067.2.118.115.168.016Z" transform="translate(11.737 16.222)" fill="#afc4fe"/>
+    </g>
+  </g>
+</svg>

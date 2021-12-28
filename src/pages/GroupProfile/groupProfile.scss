@@ -1,0 +1,737 @@
+body {
+  .postajobcontent {
+    .common-accordion {
+      margin: 15px 0 0 !important;
+      .MuiAccordion-rounded {
+        margin-bottom: 16px;
+      }
+      .MuiAccordion-root {
+        &::before {
+          display: none !important;
+        }
+      }
+    }
+    .group_detailsdiv {
+      background: #ffffff;
+      box-shadow: 0px 2px 18px #24579929;
+      border-radius: 16px;
+      margin: 15px 10px 0 0;
+      .groupbox {
+        border-bottom: 1px solid #d7dde5;
+        .groupheader {
+          padding: 16px;
+          align-items: center;
+          display: flex;
+          h4 {
+            font-size: 1.125rem;
+          }
+          span {
+            font-size: 0.75rem;
+          }
+        }
+      }
+      .groupbottomtarea {
+        padding: 16px;
+        .group_bottomdiv {
+          display: flex;
+          padding-bottom: 20px;
+          align-items: flex-start;
+          .img {
+            background-color: #e7f1fd;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+            margin-right: 20px;
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .groupname {
+            font-size: 1.25rem;
+            position: relative;
+            top: 50%;
+            transform: translateY(50%);
+          }
+          button {
+            min-width: fit-content;
+            padding: 0 !important;
+            width: fit-content;
+            background-color: transparent;
+            border: 1px solid transparent;
+          }
+        }
+        .group_bottomdiv2 {
+          padding-bottom: 20px;
+          height: 115px;
+          overflow: hidden;
+          .img {
+            background-color: #e7f1fd;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+            margin-right: 20px;
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .groupname {
+            font-size: 1.25rem;
+            position: relative;
+            top: 50%;
+            transform: translateY(50%);
+          }
+          button {
+            min-width: fit-content;
+            padding: 0 !important;
+            width: fit-content;
+            background-color: transparent;
+            border: 1px solid transparent;
+          }
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          text-transform: capitalize;
+          background-color: #e7f1fd;
+          border: 1px solid #2a5798;
+          color: #2a5798;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .contact_detailsdiv {
+      background: #ffffff;
+      box-shadow: 0px 2px 18px #24579929;
+      border-radius: 16px;
+      margin: 15px 10px 0 0;
+      .contactbox {
+        border-bottom: 1px solid #d7dde5;
+        .contactheader {
+          padding: 16px;
+          align-items: center;
+          display: flex;
+          h4 {
+            font-size: 1.125rem;
+          }
+          span {
+            font-size: 0.75rem;
+          }
+        }
+      }
+      .contactbottomtarea {
+        padding: 16px;
+        .contact_bottomdiv {
+          display: flex;
+          padding-bottom: 5px;
+          align-items: flex-start;
+          .img {
+            background-color: #e7f1fd;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .contactname {
+            font-size: 0.875rem;
+            position: relative;
+            top: 2px;
+          }
+          button {
+            min-width: fit-content;
+            padding: 0 !important;
+            width: fit-content;
+            background-color: transparent;
+            border: 1px solid transparent;
+          }
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: #e7f1fd;
+          border: 1px solid #2a5798;
+          color: #2a5798;
+          text-transform: capitalize;
+          border-radius: 8px;
+        }
+      }
+    }
+    .statusredtext {
+      font-size: 0.875rem;
+      display: block;
+      color: #df1e1f;
+      .statusred {
+        width: 8px;
+        height: 8px;
+        background-color: #df1e1f;
+        border-radius: 20px;
+        display: inline-block;
+      }
+    }
+    .tabnumber {
+      padding: 8px 10px;
+      background-color: #2a5798;
+      color: #fff;
+      border-radius: 20px;
+      display: inline-block;
+      margin-right: 12px;
+    }
+    .titleareabox {
+      width: 50%;
+    }
+    .titleheader {
+      display: inline-block;
+      width: 75%;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: 500;
+      padding-top: 4px;
+      text-overflow: ellipsis;
+    }
+    .titleheadervetting {
+      display: inline-flex;
+      width: 30%;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: 500;
+      padding-top: 4px;
+      text-overflow: ellipsis;
+    }
+    .edittext {
+      text-transform: none;
+      padding-right: 15px;
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+    }
+    .topheader {
+      display: flex;
+      align-items: center;
+      .collegepic,
+      .imgarea {
+        background-color: #e7f1fd;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: relative;
+        margin-right: 20px;
+        svg,
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        button {
+          position: absolute;
+          min-width: fit-content;
+          border-radius: 20px;
+          bottom: 0;
+          padding: 15px;
+          right: 0;
+        }
+      }
+      .CollegeTitle {
+        h4 {
+          font-size: 1.275rem;
+          color: #2a5798;
+        }
+        span {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .detailsarea {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 20px;
+      .detailsdiv {
+        display: flex;
+        flex-basis: 33.33%;
+      }
+    }
+    .detailsareasingle {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 20px;
+      .detailsdiv {
+        display: flex;
+        flex-basis: 100%;
+        .description_icon {
+          flex-basis: 11%;
+        }
+      }
+      .multilist {
+        display: flex;
+        .confirmed {
+          background-color: #2a5798;
+          padding: 6px 16px;
+          margin-right: 12px;
+          color: #fff;
+          border-radius: 30px;
+        }
+        .pending {
+          background-color: #2a5798;
+          padding: 6px 16px;
+          margin-right: 12px;
+          color: #fff;
+          border-radius: 30px;
+          opacity: 0.7;
+          span.pendingtext {
+            font-size: 0.75rem;
+            margin-left: 30px;
+            background: #ff5050;
+            padding: 3px 9px;
+            border-radius: 30px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+    }
+  }
+  .successimg {
+    text-align: center;
+  }
+  form {
+    label {
+      font-weight: 500;
+    }
+    .inputboxhalf {
+      background-color: #e7f1fd;
+      border-radius: 8px;
+      padding: 10px 20px;
+      height: 49px;
+      input {
+        background-color: transparent;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      .editbutton {
+        min-width: 34px;
+        svg {
+          margin-right: 0 !important;
+        }
+      }
+    }
+    .inputboxhalfdisabled {
+      background-color: #e7f1fd;
+      border-radius: 8px;
+      padding: 10px 20px;
+      height: 49px;
+      opacity: 0.5;
+      input {
+        background-color: transparent;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      .editbutton {
+        min-width: 34px;
+        svg {
+          margin-right: 0 !important;
+        }
+      }
+    }
+    .inputboxhalftextarea {
+      background-color: #e7f1fd;
+      border-radius: 8px;
+      padding: 10px 20px;
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        resize: none;
+        outline: none;
+      }
+    }
+    .inputboxhalflinkdiv {
+      background-color: #e7f1fd;
+      border-radius: 8px;
+      padding: 0px 20px;
+      .httpsdiv {
+        padding: 15px 10px 15px 0;
+        border-right: 1px solid #d1e5ff;
+        span {
+          opacity: 0.5;
+        }
+      }
+      input {
+        background-color: transparent;
+        outline: none;
+        padding-left: 15px;
+      }
+    }
+    .buttonselectionarea {
+      button {
+        text-transform: capitalize;
+      }
+    }
+
+    .inputboxhalfcursesselect {
+      background-color: #e7f1fd;
+      border-radius: 8px;
+      padding: 10px 20px;
+      height: 49px;
+      cursor: pointer;
+      input {
+        background-color: transparent;
+        outline: none;
+        caret-color: transparent;
+      }
+      .selectcorsesdiv {
+        flex-wrap: wrap;
+      }
+      .selectedcourses {
+        background-color: #2a5798;
+        border-radius: 30px;
+        margin-right: 8px;
+        padding: 3px 7px 6px 10px;
+        button {
+          min-width: fit-content;
+          background: #fff;
+          border-radius: 30px;
+          padding: 6px 7px;
+        }
+      }
+    }
+    .selectdiv,
+    .selectdiv2 {
+      background: #ffffff;
+      box-shadow: 0px 8px 29px #34353633;
+      border-radius: 8px;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      display: none;
+      padding: 10px 0px;
+      .inputselectsearch {
+        background-color: #e7f1fd;
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin: 0 20px;
+        height: 49px;
+        input {
+          background-color: transparent;
+          outline: none;
+          padding-left: 15px;
+        }
+        svg {
+          margin-top: 4px;
+        }
+      }
+      .addbtnsrch {
+        margin: 8px 0;
+        padding: 0 20px;
+        span {
+          cursor: pointer;
+        }
+        svg {
+          position: relative;
+          top: 5px;
+        }
+      }
+      .listcourses {
+        ul {
+          list-style: none;
+          font-size: 1rem;
+          li {
+            &:hover {
+              background-color: #e7f1fd;
+            }
+            a {
+              display: block;
+              text-decoration: none;
+              padding: 12px 20px;
+              color: #222;
+            }
+          }
+        }
+      }
+    }
+  }
+  .warningmodal {
+    span {
+      line-height: 1.3em;
+    }
+    label {
+      font-weight: 500;
+    }
+    button.darkbluecolor,
+    button.lightbluecolor {
+      padding: 14px;
+      border-radius: 8px;
+    }
+  }
+  .previewmodal {
+    .topheader {
+      display: flex;
+      align-items: center;
+      .collegepic,
+      .imgarea {
+        background-color: #e7f1fd;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: relative;
+        margin-right: 20px;
+        svg,
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        button {
+          position: absolute;
+          min-width: fit-content;
+          border-radius: 20px;
+          bottom: 0;
+          padding: 15px;
+          right: 0;
+        }
+      }
+      .CollegeTitle {
+        h4 {
+          font-size: 1.275rem;
+          color: #2a5798;
+        }
+        span {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .detailsarea {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 20px;
+      .detailsdiv {
+        display: flex;
+        flex-basis: 33.33%;
+      }
+    }
+    .detailsareasingle {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 20px;
+      .detailsdiv {
+        display: flex;
+        flex-basis: 100%;
+        .description_icon {
+          flex-basis: 11%;
+        }
+      }
+      .multilist {
+        display: flex;
+        .confirmed {
+          background-color: #2a5798;
+          padding: 6px 16px;
+          margin-right: 12px;
+          color: #fff;
+          border-radius: 30px;
+        }
+        .pending {
+          background-color: #2a5798;
+          padding: 6px 16px;
+          margin-right: 12px;
+          color: #fff;
+          border-radius: 30px;
+          opacity: 0.7;
+          span.pendingtext {
+            font-size: 0.75rem;
+            margin-left: 30px;
+            background: #ff5050;
+            padding: 3px 9px;
+            border-radius: 30px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+    }
+    .contactbottomtarea {
+      .contact_bottomdiv {
+        display: flex;
+        padding-bottom: 5px;
+        align-items: flex-start;
+        .img {
+          background-color: #e7f1fd;
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          position: relative;
+          margin-right: 20px;
+          margin-bottom: 10px;
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .contactname {
+          font-size: 0.875rem;
+          position: relative;
+          top: 2px;
+        }
+        button {
+          min-width: fit-content;
+          padding: 0 !important;
+          width: fit-content;
+          background-color: transparent;
+          border: 1px solid transparent;
+        }
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #e7f1fd;
+        border: 1px solid #2a5798;
+        color: #2a5798;
+        text-transform: capitalize;
+        border-radius: 8px;
+      }
+    }
+  }
+  .editmodal,
+  .editmediummodal,
+  .editmediummodal2 {
+    label {
+      font-weight: 500;
+    }
+    button.imageeditbtn {
+      padding: 8px;
+      min-width: 0;
+      background-color: #2a5798;
+      border-radius: 20px;
+      position: absolute;
+      bottom: 0;
+      right: 180px;
+      svg {
+        margin-right: 0 !important;
+      }
+    }
+    button.darkbluecolor,
+    button.lightbluecolor {
+      margin-top: 15px;
+      padding: 14px;
+      border-radius: 8px;
+    }
+    .institutionbox {
+      background: #ffffff;
+      box-shadow: 0px 2px 18px #24579929;
+      border-radius: 16px;
+      padding: 12px 20px;
+    }
+    .groupnamenoneditable{
+      display: none;
+    }
+    
+    .gourpeditable {
+      form {
+        width: 342px;
+        padding: 0;
+        margin: 0 auto;
+        div {
+          flex-basis: 100%;
+          position: relative;
+          input {
+            padding: 0 0 5px;
+            border-bottom: 1px solid #2a5798 !important;
+            border-radius: 0;
+            outline: none;
+            &:focus {
+              background: transparent;
+            }
+          }
+          button {
+            position: absolute;
+            min-width: fit-content;
+            padding: 0 !important;
+            right: 0px;
+            top: 45%;
+            transform: translateY(-55%);
+          }
+        }
+        .tooltipdiv {
+          flex-basis: 0;
+          margin: 0 0 0 auto;
+        }
+      }
+    }
+  }
+
+  .otp-div {
+    justify-content: space-between;
+    input {
+      padding: 16px 27px;
+      flex-basis: 15%;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1.25rem !important;
+    }
+  }
+  .topheader {
+    display: flex;
+    align-items: center;
+    .collegepic,
+    .imgarea {
+      background-color: #e7f1fd;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      position: relative;
+      margin-right: 20px;
+      svg,
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      button {
+        position: absolute;
+        min-width: fit-content;
+        border-radius: 20px;
+        bottom: 0;
+        padding: 15px;
+        right: 0;
+      }
+    }
+    .CollegeTitle {
+      h4 {
+        font-size: 1.275rem;
+        color: #2a5798;
+      }
+      span {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  @media (min-width: 1500px) {
+    .MuiContainer-maxWidthXl {
+      max-width: 1500px;
+    }
+  }
+}

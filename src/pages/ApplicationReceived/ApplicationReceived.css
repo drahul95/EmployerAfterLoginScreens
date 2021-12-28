@@ -1,0 +1,54 @@
+body .applicationreceivedcontent {
+  padding-right: 50px;
+}
+
+body .applicationreceivedcontent .pagetitle {
+  letter-spacing: 0px;
+  font-size: 45px;
+  line-height: 1.3em;
+  font-weight: bold;
+  color: #1c1b1b;
+  margin: 25px 0;
+  display: block;
+  max-width: 500px;
+}
+
+body .applicationreceivedcontent .bg_img {
+  width: 300px;
+}
+
+body .applicationreceivedcontent button {
+  text-transform: none;
+}
+
+body .applicationreceivedcontent .listarea .button-area {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .applicationreceivedcontent .listarea .button-area button {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+body .applicationreceivedcontent .savedboxdiv {
+  background-color: #e7f1fd;
+  border: 1px solid #d1e5ff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+body .applicationreceivedcontent .savedboxdiv .titlediv .heading {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+body .applicationreceivedcontent .savedboxdiv .titlediv .subheading {
+  font-size: 14px;
+  color: #2a5798;
+  display: block;
+}
+/*# sourceMappingURL=ApplicationReceived.css.map */

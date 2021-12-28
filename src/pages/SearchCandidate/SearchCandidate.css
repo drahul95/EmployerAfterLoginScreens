@@ -1,0 +1,189 @@
+body .searchcandcontent .searchareadiv {
+  padding: 25px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .srchinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 8px 39px #24579933;
+          box-shadow: 0px 8px 39px #24579933;
+  border-radius: 16px;
+  padding: 15px;
+  -ms-flex-preferred-size: 58%;
+      flex-basis: 58%;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .srchinput .srchsvgdiv {
+  padding-right: 12px;
+  padding-top: 3px;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .srchinput .srcharea_inputdiv {
+  margin: 0;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .srchinput .srcharea_inputdiv .MuiInput-underline:before, body .searchcandcontent .searchareadiv .srchdiv .srchinput .srcharea_inputdiv .MuiInput-underline:after {
+  display: none;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .locateinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 8px 39px #24579933;
+          box-shadow: 0px 8px 39px #24579933;
+  border-radius: 16px;
+  padding: 15px;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .locateinput .locatesvgdiv {
+  padding-right: 12px;
+  padding-top: 3px;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .locateinput .srcharea_inputdiv {
+  margin: 0;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .locateinput .srcharea_inputdiv .MuiInputBase-root::after, body .searchcandcontent .searchareadiv .srchdiv .locateinput .srcharea_inputdiv .MuiInputBase-root::before {
+  display: none;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .locateinput .srcharea_inputdiv .MuiChip-root {
+  background-color: #2a5798;
+  color: #fff;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .locateinput .srcharea_inputdiv .MuiChip-root .MuiChip-deleteIcon {
+  color: #fff;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .srchbutton {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+body .searchcandcontent .searchareadiv .srchdiv .srchbutton button {
+  width: 100%;
+  padding: 19px 0;
+  text-transform: none;
+}
+
+body .searchcandcontent .searchareadiv .label {
+  padding-bottom: 10px;
+  display: block;
+}
+
+body .filtercomponent button {
+  border: none;
+}
+
+body .filtercomponent select {
+  border-color: #d1e5ff;
+}
+
+body .filtercomponent input[type="checkbox"] {
+  background-color: #e7f1fd;
+  border-color: #d1e5ff;
+  padding: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .filtercomponent input[type="checkbox"]:checked {
+  background-color: #2a5798;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .filtercomponent .range datalist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #1c1b1b;
+  font-size: 12px;
+  width: 100%;
+}
+
+body .filtercomponent .range datalist option {
+  background-color: #e7f1fd;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+body .filtercomponent .range input {
+  width: 100%;
+}
+
+body .filtercomponent {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 18px #24579929;
+          box-shadow: 0px 2px 18px #24579929;
+}
+
+body .filtercomponent .dis_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .filtercomponent .filterdiv .filterarea div {
+  padding: 15px;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid #d7dde5;
+}
+
+body .filtercomponent .applyfilterdiv {
+  padding: 15px !important;
+  padding-bottom: 8px !important;
+}
+
+body .filtercomponent .filterdivsingleinput {
+  padding: 15px !important;
+  padding-bottom: 8px !important;
+}
+
+body .filtercomponent .filterdivtwoinputs {
+  padding: 15px !important;
+  padding-bottom: 8px !important;
+}
+
+body .filtercomponent .filterdivtwoinputs div button {
+  text-transform: none;
+}
+
+body .filtercomponent .filterdivcheckboxlist {
+  padding: 15px !important;
+  padding-bottom: 8px !important;
+}
+
+body .filtercomponent .filterdivcheckboxlist a {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body .filtercomponent .filterdivslider {
+  padding: 15px !important;
+  padding-bottom: 8px !important;
+}
+/*# sourceMappingURL=SearchCandidate.css.map */

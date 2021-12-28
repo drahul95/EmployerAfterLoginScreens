@@ -1,0 +1,47 @@
+body {
+  .candidatesavedcontent {
+    padding-right: 50px;
+    .pagetitle {
+      letter-spacing: 0px;
+      font-size: 45px;
+      line-height: 80px;
+      font-weight: bold;
+      color: #1c1b1b;
+      margin: 25px 0;
+      display: block;
+    }
+    .bg_img {
+      width: 300px;
+    }
+    button {
+      text-transform: none;
+    }
+    .listarea {
+      .button-area {
+        justify-content: space-between;
+        button {
+          flex-basis: 48%;
+        }
+      }
+    }
+    .savedboxdiv {
+      background-color: #e7f1fd;
+      border: 1px solid #d1e5ff;
+      border-radius: 16px;
+      padding: 20px;
+      .titlediv {
+        .heading {
+          font-size: 18px;
+          display: block;
+          margin-bottom: 15px;
+          font-weight: 700;
+        }
+        .subheading {
+          font-size: 14px;
+          color: #2a5798;
+          display: block;
+        }
+      }
+    }
+  }
+}
