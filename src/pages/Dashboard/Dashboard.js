@@ -701,12 +701,12 @@ function Dashboard() {
                         onClose={(e) => setIscandidat(null)}
                         classes={{ paper: "personaldetailsparentdiv" }}
                         anchorOrigin={{
-                          vertical: "bottom",
-                          horizontal: "center",
+                          vertical: 'top',
+                          horizontal: 'right',
                         }}
                         transformOrigin={{
-                          vertical: "top",
-                          horizontal: "center",
+                          vertical: 'center',
+                          horizontal: 'left',
                         }}
                       >
                         <CandidateDetailsPopper />
@@ -718,12 +718,12 @@ function Dashboard() {
                         onClose={(e) => setIscandidatlocked(null)}
                         classes={{ paper: "personaldetailsparentdiv" }}
                         anchorOrigin={{
-                          vertical: "bottom",
-                          horizontal: "center",
+                          vertical: 'top',
+                          horizontal: 'right',
                         }}
                         transformOrigin={{
-                          vertical: "top",
-                          horizontal: "center",
+                          vertical: 'center',
+                          horizontal: 'left',
                         }}
                       >
                         <LockedCandidateDetailsPopper />

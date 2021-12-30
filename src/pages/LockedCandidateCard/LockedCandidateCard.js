@@ -472,14 +472,11 @@ function LockedCandidate(props) {
         </Box>
         <Box component="div" className="botdiv">
           <Box component="div" className="botbuttondiv">
-            <Button className="lightbluecolor blackcolortext">Reasoning</Button>
             <Button className="lightbluecolor blackcolortext">Aptitude</Button>
             <Button className="lightbluecolor blackcolortext">
               Problem Solving
             </Button>
-            <Button className="lightbluecolor blackcolortext">Reasoning</Button>
             <Button className="lightbluecolor blackcolortext">Aptitude</Button>
-            <Button className="lightbluecolor blackcolortext">Reasoning</Button>
             <Button className="lightbluecolor blackcolortext">Reasoning</Button>
             <Button className="lightbluecolor blackcolortext">More +2</Button>
             <Button className="lightyellowcolor blackcolortext">

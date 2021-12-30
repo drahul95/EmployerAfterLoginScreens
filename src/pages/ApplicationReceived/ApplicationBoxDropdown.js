@@ -44,41 +44,50 @@ function ApplicationBoxDropdown() {
           );
         }}
       />
-      <Autocomplete
-        id="combo-box-demo"
-        className="WhiteSelectDropdown me-3"
-        options={posting}
-        getOptionLabel={(option) => option.name}
-        renderInput={(params) => {
-          params.inputProps.className = "noborderinput";
-          params.InputProps.className = "noBeforeAfter";
-          params.InputProps.placeholder = "Job Posting Status";
-          return (
-            <TextField
-              disabled
-              inputStyle={{ cursor: "none" }}
-              {...params}
-              onKeyPress={(e) => e.preventDefault()}
-            />
-          );
-        }}
-      />
       <Button
         className="redcolor whitecolortext border8 pe-4 ps-4"
         endIcon={<ResetIcon />}
       >
         Reset
       </Button>
-      <Button
-        className="greencolor whitecolortext border8 pe-4 ps-4 marginautoright"
-        startIcon={<ExcelIcon />}
+      <Box
+        component="div"
+        className="dis_flex gogsheet_csvarea marginautoright"
       >
-        Excel Sheet
-      </Button>
+        <Button
+          className="holdbtn whitecolortext border8 pe-4 ps-4"
+          startIcon={<GoogleSheetsIcon />}
+        >
+          G-Sheet
+        </Button>
+        <Button
+          className="greencolor whitecolortext border8 pe-4 ps-4"
+          startIcon={<ExcelIcon />}
+        >
+          CSV
+        </Button>
+      </Box>
     </Box>
   );
 }
 export default ApplicationBoxDropdown;
+const GoogleSheetsIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14.457"
+      height="20.084"
+      viewBox="0 0 14.457 20.084"
+    >
+      <path
+        id="google-sheets"
+        d="M42.645,20.084a.442.442,0,0,0,.442-.442V6.029H38a1.339,1.339,0,0,1-1.337-1.338V0H29.072a.442.442,0,0,0-.442.442v19.2a.442.442,0,0,0,.442.442ZM31.014,8.611h9.8v7.862h-9.8Zm5.293,5.536h3.72v1.54h-3.72ZM31.8,11.723h3.72v1.638H31.8Zm0,2.424h3.72v1.54H31.8ZM36.307,9.4h3.72v1.54h-3.72Zm0,2.326h3.72v1.638h-3.72ZM31.8,9.4h3.72v1.54H31.8Zm5.848-4.706V1.022l4.3,4.025H38A.355.355,0,0,1,37.648,4.691Z"
+        transform="translate(-28.63)"
+        fill="#fff"
+      />
+    </svg>
+  );
+};
 const ExcelIcon = () => {
   return (
     <svg

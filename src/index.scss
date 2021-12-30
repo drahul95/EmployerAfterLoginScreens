@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif !important;
+  font-size: 100%;
 }
 body {
   .mainlogo {
@@ -945,6 +946,10 @@ body {
     min-width: 29px;
     position: relative;
     top: -4px;
+    padding: 0;
+    &:hover {
+      background-color: transparent;
+    }
   }
   .opacity_half {
     opacity: 0.5;
@@ -1013,6 +1018,20 @@ body {
         padding-right: 12px;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+      }
+    }
+  }
+  .textfieldnormal_grey {
+    .MuiInputBase-root {
+      &:after,
+      &:before {
+        display: none;
+      }
+      #standard-normal {
+        padding: 15px;
+        background-color: #dfdfdf;
+        border-radius: 8px;
+        color: #1c1b1b;
       }
     }
   }
@@ -2210,12 +2229,12 @@ body {
       margin: 0 8px 0 0;
       background-color: #e6f0fd;
       color: #1c1b1b;
-      min-width: fit-content;
+      min-width: 0;
       border-radius: 16px;
       padding: 15px 26px;
       font-size: 16px;
       text-transform: capitalize;
-      span{
+      span {
         overflow: hidden;
         width: 40%;
         display: block;
@@ -2226,16 +2245,17 @@ body {
     }
     .buttonTab.selected {
       background-color: #2a5798;
+      min-width: fit-content;
       color: #ffffff;
-      span{
+      span {
         overflow: visible;
         width: 100%;
         display: block;
       }
     }
-    .viewbtn{
+    .viewbtn {
       width: 20%;
-      span{
+      span {
         width: 100%;
         display: block;
       }
@@ -2753,8 +2773,8 @@ body {
     }
   }
   .personaldetailsparentdiv {
-    width: 900px;
-    height: 750px;
+    width: 740px;
+    height: 850px;
     box-shadow: 0px 10px 70px #2457994d;
     border-radius: 16px;
   }
@@ -3162,8 +3182,8 @@ body {
       }
     }
   }
-  .NoDataCandidates{
-    button{
+  .NoDataCandidates {
+    button {
       padding: 12px 80px;
     }
   }
@@ -3221,6 +3241,26 @@ body {
   .blurimage {
     filter: blur(1.5px);
   }
+  .ticksdiv {
+    display: flex;
+    .tick1 {
+      flex-basis: 20%;
+      .roundcircle {
+        background-color: #2a5798;
+        border-radius: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      svg {
+        width: 10px;
+      }
+    }
+  }
+  @media (max-height: 800px) {
+    .personaldetailsparentdiv {
+      height: 720px;
+    }
+  }
   @media (max-width: 1600px) {
     .canddiv {
       .topdiv {
@@ -3257,9 +3297,83 @@ body {
           flex-basis: 48%;
         }
       }
+      .topdiv {
+        .cont {
+          .buttondiv {
+            button {
+              padding: 8px 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    .personaldetailsparentdiv {
+      width: 670px;
     }
   }
   @media only screen and (max-width: 992px) {
+    .font12 {
+      font-size: 0.75rem !important;
+    }
+    .font14 {
+      font-size: 0.75rem !important;
+    }
+    .font16 {
+      font-size: 0.875rem !important;
+      line-height: 1.1em;
+    }
+    .font18 {
+      font-size: 1rem !important;
+    }
+    .font20 {
+      font-size: 1rem !important;
+    }
+    .font24 {
+      font-size: 1rem !important;
+    }
+    .previewmodal {
+      height: 550px;
+      .topheader {
+        display: block !important;
+        .CollegeTitle {
+          h4 {
+            margin-top: 10px !important;
+            line-height: 1.3em !important;
+          }
+        }
+      }
+      .detailsarea {
+        display: block !important;
+        .detailsdiv {
+          margin-top: 15px !important;
+          svg {
+            width: 30px !important;
+          }
+        }
+      }
+      .detailsareasingle {
+        .multilist {
+          display: block !important;
+          .confirmed {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.875rem;
+          }
+          .pending {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.875rem;
+            span.pendingtext {
+              display: block;
+              margin-left: 0;
+              width: fit-content;
+            }
+          }
+        }
+      }
+    }
     .personaldetailsparentdiv {
       width: 80%;
     }
@@ -3301,6 +3415,10 @@ body {
           }
           div.marginautoright {
             margin: 0 !important;
+            display: block;
+            div.ms-3 {
+              margin: 10px 0;
+            }
           }
         }
       }

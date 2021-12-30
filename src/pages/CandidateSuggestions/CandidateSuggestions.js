@@ -339,9 +339,12 @@ function CandidateSuggestions() {
             <Grid item xs={12}>
               <Grid container direction="row" justifyContent="space-between">
                 <Grid item lg={7} md={12}>
-                  <Typography variant="span" className="pagetitle">
-                    Candidates Suggestions
-                  </Typography>
+                  <Box component="div" className="dis_flex">
+                    <Button startIcon={<BackIcon />}></Button>
+                    <Typography variant="span" className="pagetitle">
+                      Candidates Suggestions
+                    </Typography>
+                  </Box>
                   <Box
                     component="div"
                     className="dis_flex fullwidth_100percent"
@@ -359,7 +362,6 @@ function CandidateSuggestions() {
                         params.inputProps.className = "noborderinput_caret";
                         params.InputProps.className = "noBeforeAfter";
                         params.InputProps.placeholder = "Search";
-                        params.InputProps.endAdornment = null;
                         params.InputProps.startAdornment = (
                           <>
                             <InputAdornment position="start">
@@ -388,41 +390,6 @@ function CandidateSuggestions() {
             <Grid item xs={12} className="empty mb-4 pt-4 pb-4">
               {/* <CandidateSuggestionsEmpty /> */}
 
-              {/* <Box component="div" className="listarea">
-                <Grid
-                  container
-                  direction="row"
-                  justifyContent="space-between"
-                  spacing={2}
-                >
-                  <Grid item lg={4} md={4} xs={12}>
-                    <CandidateSuggestionsBoxList />
-                  </Grid>
-                  <Grid item lg={4} md={4} xs={12}>
-                    <CandidateSuggestionsBoxList />
-                  </Grid>
-                  <Grid item lg={4} md={4} xs={12}>
-                    <CandidateSuggestionsBoxList />
-                  </Grid>
-                </Grid>
-                <Grid
-                  container
-                  direction="row"
-                  justifyContent="space-between"
-                  spacing={2}
-                >
-                  <Grid item lg={4} md={4} xs={12}>
-                    <CandidateSuggestionsBoxList />
-                  </Grid>
-                  <Grid item lg={4} md={4} xs={12}>
-                    <CandidateSuggestionsBoxList />
-                  </Grid>
-                  <Grid item lg={4} md={4} xs={12}>
-                    <CandidateSuggestionsBoxList />
-                  </Grid>
-                </Grid>
-              </Box> */}
-
               <CandidateSuggestionsList />
             </Grid>
           </Grid>
@@ -440,6 +407,50 @@ const search = [
   { name: "Soumya", id: 5 },
   { name: "andugundutandapani", id: 6 },
 ];
+
+const BackIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="29"
+      height="23.593"
+      viewBox="0 0 29 23.593"
+    >
+      <g id="back" transform="translate(-2.5 -8)">
+        <g
+          id="Group_6948"
+          data-name="Group 6948"
+          transform="translate(2.549 18.814)"
+        >
+          <g id="Group_6947" data-name="Group 6947" transform="translate(0)">
+            <g id="Group_6946" data-name="Group 6946">
+              <path
+                id="Path_3799"
+                data-name="Path 3799"
+                d="M30.568,31.966H3.583a.983.983,0,0,1,0-1.966H30.568a.983.983,0,1,1,0,1.966Z"
+                transform="translate(-2.6 -30)"
+                fill="#2a5798"
+              />
+            </g>
+          </g>
+        </g>
+        <g id="Group_6951" data-name="Group 6951" transform="translate(2.5 8)">
+          <g id="Group_6950" data-name="Group 6950">
+            <g id="Group_6949" data-name="Group 6949">
+              <path
+                id="Path_3800"
+                data-name="Path 3800"
+                d="M14.3,31.593a.97.97,0,0,1-.688-.295L2.795,20.485a.95.95,0,0,1,0-1.376L13.608,8.295a.973.973,0,0,1,1.376,1.376L4.908,19.8,15.034,29.922a.95.95,0,0,1,0,1.376,1,1,0,0,1-.737.295Z"
+                transform="translate(-2.5 -8)"
+                fill="#2a5798"
+              />
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+};
 const ProfileDrawer = () => {
   return (
     <svg

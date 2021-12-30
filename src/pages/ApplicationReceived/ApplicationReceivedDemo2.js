@@ -31,8 +31,11 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import SearchIcon from "@material-ui/icons/Search";
 import ApplicationSavedEmpty from "./ApplicationSavedEmpty";
-import ApplicationSavedBoxListActivate from "./ApplicationSavedBoxListActivate";
-import ApplicationSavedBoxListDeActivate from "./ApplicationSavedBoxListDeActivate";
+import ApplicationSavedBoxListActive from "./ApplicationSavedBoxListActive";
+import ApplicationSavedBoxListPaused from "./ApplicationSavedBoxListPaused";
+import ApplicationSavedBoxListRepost from "./ApplicationSavedBoxListRepost";
+import ApplicationSavedBoxListExtend from "./ApplicationSavedBoxListExtend";
+import ApplicationSavedBoxListSuspend from "./ApplicationSavedBoxListSuspend";
 import ApplicationSavedList from "./ApplicationSavedList";
 import ApplicationBoxDropdown from "./ApplicationBoxDropdown";
 import JIElogo from "../../images/JIE_logo.svg";
@@ -339,13 +342,13 @@ function ApplicationReceivedDemo() {
           <Grid container direction="row" justifyContent="space-between">
             <Grid item xs={12}>
               <Grid container direction="row" justifyContent="space-between">
-                <Grid item md={9}>
+                <Grid item md={7}>
                   <Typography variant="span" className="pagetitle">
                     Jobs Posted And Applications Received
                   </Typography>
                   <Box
                     component="div"
-                    className="dis_flex fullwidth_100percent"
+                    className="dis_flex topheader fullwidth_100percent"
                   >
                     <Autocomplete
                       debug
@@ -372,12 +375,9 @@ function ApplicationReceivedDemo() {
                         return <TextField {...params} />;
                       }}
                     />
-                    <Button className="darkbluecolor whitecolortext border8 pe-4 ps-4">
-                      Search
-                    </Button>
                   </Box>
                 </Grid>
-                <Grid item md={3}>
+                <Grid item md={5}>
                   <img
                     src={BASE_URL + SavedBG}
                     alt=""
@@ -389,9 +389,7 @@ function ApplicationReceivedDemo() {
             <Grid item xs={12}>
               <ApplicationBoxDropdown />
             </Grid>
-            <Grid item xs={12} className="empty mt-4 mb-4 pt-4 pb-4">
-              {/* <CandidateSavedEmpty /> */}
-
+            <Grid item xs={12} className="empty mb-4 pt-4 pb-4">
               <Box component="div" className="listarea">
                 <Grid
                   container
@@ -400,34 +398,25 @@ function ApplicationReceivedDemo() {
                   spacing={2}
                 >
                   <Grid item lg={4} md={4} xs={12}>
-                    <ApplicationSavedBoxListDeActivate />
+                    <ApplicationSavedBoxListPaused />
                   </Grid>
                   <Grid item lg={4} md={4} xs={12}>
-                    <ApplicationSavedBoxListDeActivate />
+                    <ApplicationSavedBoxListRepost />
                   </Grid>
                   <Grid item lg={4} md={4} xs={12}>
-                    <ApplicationSavedBoxListActivate />
-                  </Grid>
-                </Grid>
-                <Grid
-                  container
-                  direction="row"
-                  justifyContent="space-between"
-                  spacing={2}
-                >
-                  <Grid item lg={4} md={4} xs={12}>
-                    <ApplicationSavedBoxListActivate />
+                    <ApplicationSavedBoxListExtend />
                   </Grid>
                   <Grid item lg={4} md={4} xs={12}>
-                    <ApplicationSavedBoxListActivate />
+                    <ApplicationSavedBoxListActive />
                   </Grid>
                   <Grid item lg={4} md={4} xs={12}>
-                    <ApplicationSavedBoxListActivate />
+                    <ApplicationSavedBoxListSuspend />
+                  </Grid>
+                  <Grid item lg={4} md={4} xs={12}>
+                    <ApplicationSavedBoxListActive />
                   </Grid>
                 </Grid>
               </Box>
-
-              {/* <CandidateSavedList /> */}
             </Grid>
           </Grid>
         </Box>

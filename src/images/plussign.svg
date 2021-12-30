@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="112" viewBox="0 0 112 112">
+  <defs>
+    <filter id="Shadow_Blue" x="0" y="0" width="112" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7339" data-name="Group 7339" transform="translate(-141.026 34)">
+    <g id="Group_249" data-name="Group 249" transform="translate(177.026)">
+      <g transform="matrix(1, 0, 0, 1, -36, -34)" filter="url(#Shadow_Blue)">
+        <path id="Shadow_Blue-2" data-name="Shadow_Blue" d="M20,0A20,20,0,1,1,0,20,20,20,0,0,1,20,0Z" transform="translate(36 34)" fill="#2a5798"/>
+      </g>
+    </g>
+    <g id="fluent:add-circle-20-regular" transform="translate(187.025 10)">
+      <g id="Group">
+        <path id="Vector" d="M0,10A1.25,1.25,0,0,1,1.25,8.75h7.5V1.25a1.25,1.25,0,1,1,2.5,0v7.5h7.5a1.25,1.25,0,1,1,0,2.5h-7.5v7.5a1.25,1.25,0,1,1-2.5,0v-7.5H1.25A1.25,1.25,0,0,1,0,10Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

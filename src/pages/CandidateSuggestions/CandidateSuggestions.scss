@@ -3,11 +3,11 @@ body {
     padding-right: 50px;
     .pagetitle {
       letter-spacing: 0px;
-      font-size: 45px;
+      font-size: 2.6rem;
       line-height: 80px;
       font-weight: bold;
       color: #1c1b1b;
-      margin: 25px 0;
+      margin: 10px 0 15px;
       display: block;
     }
     .bg_img {
@@ -35,6 +35,20 @@ body {
     button {
       text-transform: none;
     }
+    .autocompdiv {
+      .autocompdivarea{
+        .WhiteSelectDropdown{
+          .noBeforeAfter {
+            .noborderinput{
+              padding: 11px 18px;
+            }
+          }
+        }
+        .button{
+          padding: 8px 26px !important;
+        }
+      }
+    }
     .listarea {
       .button-area {
         justify-content: space-between;
@@ -45,7 +59,7 @@ body {
     }
     .BlueSelectDropdown {
       .noBeforeAfter {
-        padding: 10px;
+        padding: 6px 10px;
       }
     }
     .infodiv2 {
@@ -55,7 +69,7 @@ body {
         margin-left: 0;
       }
     }
-    
+
     .savedboxdiv {
       background-color: #e7f1fd;
       border: 1px solid #d1e5ff;
@@ -63,12 +77,12 @@ body {
       padding: 20px;
       .titlediv {
         .heading {
-          font-size: 18px;
+          font-size: 1.125rem;
           display: block;
           font-weight: 700;
         }
         .subheading {
-          font-size: 14px;
+          font-size: 0.875rem;
           color: #2a5798;
           display: block;
         }
@@ -129,73 +143,127 @@ body {
       .sortbydiv {
         margin: 0 0 0 auto;
         width: 250px;
+        .WhiteSelectDropdown {
+          .noBeforeAfter {
+            .noborderinput {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              word-break: break-word;
+              width: 65%;
+            }
+          }
+        }
       }
     }
   }
   @media only screen and (max-width: 1300px) {
     .candidatesuggestionscontent {
       padding-right: 8px;
-      .savedboxdiv {
-        .buttonbox {
-          button {
-            padding: 10px 13px !important;
-            text-indent: -9999em;
-            text-transform: uppercase;
-            svg {
-              position: relative;
-              left: 6px;
-            }
-          }
-        }
-      }
+
       .jdlistul {
         display: block;
       }
       .sugcandidiv {
-        .topdiv {
-          .cont {
-            .buttondiv {
-              button {
-                padding: 10px 13px !important;
-                text-indent: -9999em;
-                text-transform: uppercase;
-                svg {
-                  position: relative;
-                  left: 6px;
-                }
-                svg.download-white {
-                  left: 0px;
-                }
-              }
-            }
-          }
-        }
         .multi-selection {
-          flex-direction: column-reverse;
           .buttondiv {
             margin-top: 15px;
           }
         }
       }
+
       .sortbydiv {
-        width: 320px;
+        margin-top: 15px !important;
+        width: 240px;
+        .WhiteSelectDropdown {
+          .noBeforeAfter {
+            .noborderinput {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              word-break: break-word;
+              width: 65%;
+            }
+          }
+        }
       }
     }
   }
   @media only screen and (max-width: 1279px) {
     .candidatesuggestionscontent {
+      // .savedboxdiv {
+      //   .buttonbox {
+      //     button {
+      //       padding: 10px 13px !important;
+      //       text-indent: -9999em;
+      //       text-transform: uppercase;
+      //       svg {
+      //         position: relative;
+      //         left: 6px;
+      //       }
+      //     }
+      //   }
+      // }
+      // .sugcandidiv {
+      //   .topdiv {
+      //     .cont {
+      //       .buttondiv {
+      //         button {
+      //           padding: 10px 13px !important;
+      //           text-indent: -9999em;
+      //           text-transform: uppercase;
+      //           svg {
+      //             position: relative;
+      //             left: 6px;
+      //           }
+      //           svg.download-white {
+      //             left: 0px;
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      //   .multi-selection {
+      //     flex-direction: column-reverse;
+      //     .buttondiv {
+      //       margin-top: 15px;
+      //     }
+      //   }
+      // }
       .bg_img {
         display: none;
       }
       .autocompdiv {
-        display: block;
+        .autocompdivarea{
+          .WhiteSelectDropdown{
+            width: 200px;
+            .noBeforeAfter {
+              .noborderinput{
+                padding: 11px 18px;
+              }
+            }
+          }
+          .button{
+            padding: 8px 26px !important;
+          }
+        }
+      }
+      .autocompdivarea {
+        .sortbydiv {
+          width: fit-content;
+          margin-top: 0 !important;
+        }
+      }
+      .sortbydiv {
+        width: 190px;
       }
     }
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1022px) {
     .candidatesuggestionscontent {
       .pagetitle {
         line-height: 1.1em;
+      }
+      .autocompdiv {
+        display: block;
       }
       .savedboxdiv {
         .contentdiv {
@@ -204,9 +272,13 @@ body {
             margin-bottom: 15px;
           }
           .buttonbox {
-            display: flex;
-            justify-content: space-between;
+            display: block;
             margin-bottom: 15px !important;
+            button {
+              padding: 10px 26px !important;
+              width: 100%;
+              margin-bottom: 10px;
+            }
           }
         }
         .iconreq ul {
@@ -222,10 +294,10 @@ body {
           }
         }
         .rightarrowbtn {
-          padding-left: 8px !important;
+          padding-left: 0px !important;
         }
         .leftarrowbtn {
-          padding-right: 8px !important;
+          padding-right: 0px !important;
         }
       }
       .sugcandidiv {
@@ -235,23 +307,40 @@ body {
               display: flex;
               flex-wrap: wrap;
               justify-content: space-between;
+              position: relative;
               .infodiv2 {
                 padding: 0 !important;
                 min-width: 15px;
+                flex-basis: 0;
+                position: absolute;
+                top: 0;
+                left: 46%;
               }
               button {
-                margin: 0 0 15px !important;
+                margin: 0 0 15px 0 !important;
+                flex-basis: 45%;
               }
             }
           }
         }
         .multi-selection {
+          flex-direction: column;
           .buttondiv {
             display: block;
             width: 100%;
             button {
               width: 100%;
               margin: 15px 0 0;
+            }
+          }
+        }
+      }
+      .sortbydiv {
+        width: fit-content;
+        .WhiteSelectDropdown {
+          .noBeforeAfter {
+            .noborderinput {
+              width: 100%;
             }
           }
         }
@@ -269,12 +358,11 @@ body {
           button.redcolor {
             margin: 15px 0;
             width: 100%;
-            padding: 15px;
+            padding: 8px;
           }
         }
         .gogsheet_csvarea {
           float: none;
-          display: block !important;
           button {
             margin-bottom: 15px;
             width: 100%;

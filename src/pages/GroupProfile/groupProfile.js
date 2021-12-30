@@ -10,44 +10,33 @@ import {
   AppBar,
   Tabs,
   Tab,
-  List,
-  ListItem,
   Container,
-  Checkbox,
   Radio,
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  TextareaAutosize,
   Modal,
   Backdrop,
-  InputAdornment,
   Fade,
   Menu,
+  IconButton,
 } from "@material-ui/core";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import BigSchlImg from "../../images/Big_schl.png";
 import AddIcon from "@material-ui/icons/Add";
 import SchoolSMLIMG from "../../images/profile_schl.png";
-import PostBG from "../../images/postajob_bg.svg";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 // import PersonIcon from "@material-ui/icons/Person";
 // import PersonalProfileImg from "../../images/personalprofile.png";
 // import ChatIcon from "@material-ui/icons/Chat";
 import PropTypes from "prop-types";
-import CloseIcon from "@material-ui/icons/Close";
 // import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import { withStyles } from "@material-ui/core/styles";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
-import CheckBoxIcon from "@material-ui/icons/CheckBox";
 import GroupImg from "../../images/groupimg.png";
 // import MinimizeIcon from "@material-ui/icons/Minimize";
-const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
-const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 require("dotenv").config();
 const BASE_URL = process.env.REACT_APP_BASE_URL;
-
 function PostAJob() {
   const EditGroupName = () => {
     const GroupNameNonEdit = document.querySelector(".groupnamenoneditable ");
@@ -372,6 +361,18 @@ function PostAJob() {
     }
   };
 
+  const [anchorEldotsMenu, setAnchorEldotsMenu] = React.useState(null);
+  const opendotsMenu = Boolean(anchorEldotsMenu);
+
+  const handleClickdotsMenu = (event) => {
+    setAnchorEldotsMenu(event.currentTarget);
+    event.stopPropagation();
+  };
+
+  const handleClosedotsMenu = (e) => {
+    setAnchorEldotsMenu(null);
+  };
+
   return (
     <>
       <Box component="div" className="navarea">
@@ -447,10 +448,10 @@ function PostAJob() {
           </MenuItem>
         </Box>
       </Box>
-      <Box className="pagecontentarea postajobcontent">
+      <Box className="pagecontentarea groupprofile">
         <Container maxWidth="xl">
           <Grid container direction="row" justifyContent="space-between">
-            <Grid item lg={4} md={12} xs={12}>
+            <Grid item lg={4} md={12} xs={12} className="groupandcontarea">
               <Box component="div" className="group_detailsdiv">
                 <Box component="div" className="groupbox">
                   <Box component="div" className="groupheader">
@@ -514,7 +515,7 @@ function PostAJob() {
                     </Button>
                   </Box>
                   <Button
-                    startIcon={<PlusIcon />}
+                    startIcon={<PlusIcon className="mt-2" />}
                     onClick={handleEditGroupOpen}
                     className="dis_none"
                   >
@@ -580,8 +581,9 @@ function PostAJob() {
                     </Button>
                   </Box>
                   <Button
-                    startIcon={<PlusIcon />}
+                    startIcon={<PlusIconNoCircle />}
                     onClick={handleAddContactPersonOpen}
+                    className="mt-3"
                   >
                     Add Incomplete Details
                   </Button>
@@ -589,10 +591,16 @@ function PostAJob() {
               </Box>
               <Button
                 className="addbutton"
-                startIcon={<PlusIcon />}
+                startIcon={<PlusIconNoCircle />}
                 onClick={handleAddInstituteOpen}
               >
                 Add Institution
+              </Button>
+              <Button
+                className="addbutton-mob"
+                onClick={handleAddInstituteOpen}
+              >
+                <PlusIconWhite />
               </Button>
             </Grid>
             <Grid item lg={8} md={12} xs={12}>
@@ -626,28 +634,86 @@ function PostAJob() {
 
                     <Box
                       component="div"
-                      className="marginautoright dis_flex mt-2"
+                      className="marginautoright dis_flex mt-2 editarea"
                     >
                       <Box component="div" className="me-2 edittimediv">
                         <Typography className="font14 edittext">
                           Last Edited : 12th, Aug 2021
                         </Typography>
                       </Box>
-                      <Button
-                        className="transparentbtn noborder mt-1"
-                        onClick={handlePreviewOpen}
-                      >
-                        <EyeViewIcon />
-                      </Button>
-                      <Button className="transparentbtn noborder mt-1">
-                        <EditIcon />
-                      </Button>
-                      <Button
-                        className="transparentbtn noborder mt-1"
-                        onClick={handleDelTabOpen}
-                      >
-                        <RemoveRedIcon />
-                      </Button>
+                      <Box component="div" className="webbuttonsarea">
+                        <Button
+                          className="transparentbtn noborder mt-1"
+                          onClick={handlePreviewOpen}
+                        >
+                          <EyeViewIcon />
+                        </Button>
+                        <Button
+                          className="transparentbtn noborder mt-1"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                          }}
+                        >
+                          <EditIcon />
+                        </Button>
+                        <Button
+                          className="transparentbtn noborder mt-1"
+                          onClick={handleDelTabOpen}
+                        >
+                          <RemoveRedIcon />
+                        </Button>
+                      </Box>
+                      <Box component="div" className="mobdots">
+                        <IconButton
+                          aria-label="more"
+                          aria-controls="long-menu"
+                          aria-haspopup="true"
+                          className="mobdostbtn"
+                          onClick={handleClickdotsMenu}
+                        >
+                          <MoreVertIcon />
+                        </IconButton>
+                        <Menu
+                          id="long-menu"
+                          anchorEl={anchorEldotsMenu}
+                          keepMounted
+                          open={opendotsMenu}
+                          onClose={handleClosedotsMenu}
+                          PaperProps={{
+                            style: {
+                              width: "auto",
+                            },
+                          }}
+                        >
+                          <MenuItem>
+                            <Button
+                              className="transparentbtn noborder mt-1"
+                              onClick={(e) => {
+                                handlePreviewOpen();
+                                handleClosedotsMenu();
+                              }}
+                            >
+                              <EyeViewIcon />
+                            </Button>
+                          </MenuItem>
+                          <MenuItem onClick={handleClosedotsMenu}>
+                            <Button className="transparentbtn noborder mt-1">
+                              <EditIcon />
+                            </Button>
+                          </MenuItem>
+                          <MenuItem>
+                            <Button
+                              className="transparentbtn noborder mt-1"
+                              onClick={(e) => {
+                                handleDelTabOpen();
+                                handleClosedotsMenu();
+                              }}
+                            >
+                              <RemoveRedIcon />
+                            </Button>
+                          </MenuItem>
+                        </Menu>
+                      </Box>
                     </Box>
                   </AccordionSummary>
                   <AccordionDetails>
@@ -712,7 +778,7 @@ function PostAJob() {
                       <Box component="div" className="detailsareasingle">
                         <Box component="div" className="detailsdiv">
                           <Courses />
-                          <Box component="div">
+                          <Box component="div" className="divarea">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -720,18 +786,22 @@ function PostAJob() {
                               Courses Offered
                             </Typography>
                             <Box className="multilist">
-                              <Typography variant="span" className="confirmed">
-                                Bachelor's Of Science
-                              </Typography>
-                              <Typography variant="span" className="pending">
-                                Bachelors of Business Administration
+                              <Box component="div" className="confirmed">
+                                <Typography variant="span">
+                                  Bachelor's Of Science
+                                </Typography>
+                              </Box>
+                              <Box component="div" className="pending">
+                                <Typography variant="span">
+                                  Bachelors of Business Administration
+                                </Typography>
                                 <Typography
                                   variant="span"
                                   className="pendingtext"
                                 >
                                   Pending for approval
                                 </Typography>
-                              </Typography>
+                              </Box>
                             </Box>
                           </Box>
                         </Box>
@@ -739,7 +809,7 @@ function PostAJob() {
                       <Box component="div" className="detailsarea">
                         <Box component="div" className="detailsdiv">
                           <Globe />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               variant="span"
                               className="font14 block mb-2"
@@ -753,7 +823,7 @@ function PostAJob() {
                         </Box>
                         <Box component="div" className="detailsdiv">
                           <City />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -767,7 +837,7 @@ function PostAJob() {
                         </Box>
                         <Box component="div" className="detailsdiv">
                           <PinCode />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -783,7 +853,7 @@ function PostAJob() {
                       <Box component="div" className="detailsareasingle">
                         <Box component="div" className="detailsdiv">
                           <Address />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -800,7 +870,7 @@ function PostAJob() {
                       <Box component="div" className="detailsareasingle">
                         <Box component="div" className="detailsdiv">
                           <URL />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -816,7 +886,7 @@ function PostAJob() {
                       <Box component="div" className="detailsareasingle">
                         <Box component="div" className="detailsdiv">
                           <Description />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -842,7 +912,7 @@ function PostAJob() {
                       <Box component="div" className="detailsarea">
                         <Box component="div" className="detailsdiv">
                           <Branches />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -856,7 +926,7 @@ function PostAJob() {
                         </Box>
                         <Box component="div" className="detailsdiv">
                           <Students />
-                          <Box component="div">
+                          <Box component="div" className="detailscont">
                             <Typography
                               component="span"
                               className="font14 block mb-2"
@@ -901,7 +971,7 @@ function PostAJob() {
                       <Box component="div">
                         <Typography
                           component="span"
-                          className="darkcolortext font12 mt-1 pe-3"
+                          className="darkcolortext vettingmsg font12 mt-1 pe-3"
                         >
                           <HourGlass />
                           This institution category is under vetting!
@@ -927,7 +997,7 @@ function PostAJob() {
                           </Typography>
                           <Typography
                             component="span"
-                            className="darkcolortext"
+                            className="darkcolortext vettingmsg"
                           >
                             <HourGlass />
                             Under vetting!
@@ -944,7 +1014,7 @@ function PostAJob() {
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2-content"
+                    aria-controls="panel3-content"
                     id="accordion-header"
                   >
                     <Box component="div">
@@ -964,20 +1034,73 @@ function PostAJob() {
 
                     <Box
                       component="div"
-                      className="marginautoright dis_flex mt-2"
+                      className="marginautoright dis_flex mt-2 editareabox "
                     >
-                      <Button
-                        className="transparentbtn noborder mt-1"
-                        onClick={handlePreviewOpen}
-                      >
-                        <EyeViewIcon />
-                      </Button>
-                      <Button
-                        className="transparentbtn noborder mt-1"
-                        onClick={handleDelTabOpen}
-                      >
-                        <RemoveRedIcon />
-                      </Button>
+                      <Box component="div" className="webbuttonsarea">
+                        <Button
+                          className="transparentbtn noborder mt-1"
+                          onClick={handlePreviewOpen}
+                        >
+                          <EyeViewIcon />
+                        </Button>
+                        <Button
+                          className="transparentbtn noborder mt-1"
+                          onClick={handleDelTabOpen}
+                        >
+                          <RemoveRedIcon />
+                        </Button>
+                      </Box>
+                      <Box component="div" className="mobdots">
+                        <IconButton
+                          aria-label="more"
+                          aria-controls="long-menu"
+                          aria-haspopup="true"
+                          className="mobdostbtn"
+                          onClick={handleClickdotsMenu}
+                        >
+                          <MoreVertIcon />
+                        </IconButton>
+                        <Menu
+                          id="long-menu"
+                          anchorEl={anchorEldotsMenu}
+                          keepMounted
+                          open={opendotsMenu}
+                          onClose={handleClosedotsMenu}
+                          PaperProps={{
+                            style: {
+                              width: "auto",
+                            },
+                          }}
+                        >
+                          <MenuItem>
+                            <Button
+                              className="transparentbtn noborder mt-1"
+                              onClick={(e) => {
+                                handlePreviewOpen();
+                                handleClosedotsMenu();
+                              }}
+                            >
+                              <EyeViewIcon />
+                            </Button>
+                          </MenuItem>
+                          <MenuItem onClick={handleClosedotsMenu}>
+                            <Button className="transparentbtn noborder mt-1">
+                              <EditIcon />
+                            </Button>
+                          </MenuItem>
+                          <MenuItem>
+                            <Button
+                              className="transparentbtn noborder mt-1"
+                              onClick={(e) => {
+                                handleDelTabOpen();
+                                handleClosedotsMenu();
+                              }}
+                            >
+                              <RemoveRedIcon />
+                            </Button>
+                          </MenuItem>
+                        </Menu>
+                      </Box>
                     </Box>
                   </AccordionSummary>
                   <AccordionDetails>
@@ -4382,6 +4505,29 @@ const ContactIcon = () => {
   );
 };
 
+const PlusIconNoCircle = () => {
+  return (
+    <svg
+      className="me-3"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+    >
+      <g id="fluent:add-circle-20-regular" transform="translate(-1.667 -1.667)">
+        <g id="Group" transform="translate(1.667 1.667)">
+          <path
+            id="Vector"
+            d="M0,10A1.25,1.25,0,0,1,1.25,8.75h7.5V1.25a1.25,1.25,0,1,1,2.5,0v7.5h7.5a1.25,1.25,0,1,1,0,2.5h-7.5v7.5a1.25,1.25,0,1,1-2.5,0v-7.5H1.25A1.25,1.25,0,0,1,0,10Z"
+            transform="translate(0 0)"
+            fill="#2a5798"
+          />
+        </g>
+      </g>
+    </svg>
+  );
+};
+
 const PlusIcon = () => {
   return (
     <svg
@@ -4398,6 +4544,29 @@ const PlusIcon = () => {
             d="M0,10A1.25,1.25,0,0,1,1.25,8.75h7.5V1.25a1.25,1.25,0,1,1,2.5,0v7.5h7.5a1.25,1.25,0,1,1,0,2.5h-7.5v7.5a1.25,1.25,0,1,1-2.5,0v-7.5H1.25A1.25,1.25,0,0,1,0,10Z"
             transform="translate(0 0)"
             fill="#2a5798"
+          />
+        </g>
+      </g>
+    </svg>
+  );
+};
+
+const PlusIconWhite = () => {
+  return (
+    <svg
+      className="me-3"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+    >
+      <g id="fluent:add-circle-20-regular" transform="translate(-1.667 -1.667)">
+        <g id="Group" transform="translate(1.667 1.667)">
+          <path
+            id="Vector"
+            d="M0,10A1.25,1.25,0,0,1,1.25,8.75h7.5V1.25a1.25,1.25,0,1,1,2.5,0v7.5h7.5a1.25,1.25,0,1,1,0,2.5h-7.5v7.5a1.25,1.25,0,1,1-2.5,0v-7.5H1.25A1.25,1.25,0,0,1,0,10Z"
+            transform="translate(0 0)"
+            fill="#fff"
           />
         </g>
       </g>

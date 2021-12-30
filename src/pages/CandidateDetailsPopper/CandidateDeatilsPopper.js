@@ -509,7 +509,6 @@ function CandidateDeatilsPopper() {
                 </Typography>
               </Box> */}
               <Box component="div" className="tabdivcont">
-                 
                 <Box component="div" className="tableft">
                   <Box component="div" className="conttab">
                     <Typography variant="span" className="num">
@@ -780,18 +779,13 @@ function a11yProps(index) {
 
 const NotProvidedPersonal = () => {
   return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="48.392" height="48.392" viewBox="0 0 48.392 48.392">
-  <g id="Group_694" data-name="Group 694" transform="translate(0.999)">
-    <g id="Rectangle_454" data-name="Rectangle 454" transform="translate(0.197 0.197)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
-      <rect width="44" height="44" stroke="none"/>
-      <rect x="0.5" y="0.5" width="43" height="43" fill="none"/>
-    </g>
-    <g id="chat" transform="translate(-0.999)">
-      <path id="Path_4024" data-name="Path 4024" d="M338.068,10.869V7.179a7.089,7.089,0,1,0-14.177-.09v3.781h-.473A1.418,1.418,0,0,0,322,12.287V24.1a1.418,1.418,0,0,0,1.418,1.418H338.54a1.418,1.418,0,0,0,1.418-1.418V12.287a1.418,1.418,0,0,0-1.418-1.418ZM332.4,17.721v2.363a1.418,1.418,0,0,1-2.836,0V17.721a1.418,1.418,0,0,1,0-2.835H332.4a1.418,1.418,0,0,1,0,2.835Zm2.835-6.852h-8.506V7.088a4.253,4.253,0,1,1,8.506,0Z" transform="translate(-291.566 0.001)" fill="#2a5798"/>
-      <g id="Group_7109" data-name="Group 7109" transform="translate(0 13.421)">
-        <path id="Path_4025" data-name="Path 4025" d="M31.19,158.068H7.561a1.418,1.418,0,1,1,0-2.835h20.89a4.231,4.231,0,0,1-.853-2.552v-1.229H7.561a1.418,1.418,0,0,1,0-2.835H27.6V142H1.418A1.418,1.418,0,0,0,0,143.418v32.135a1.418,1.418,0,0,0,2.42,1L7.676,171.3H37.334a1.418,1.418,0,0,0,1.418-1.418V156.934H32.58A1.418,1.418,0,0,1,31.19,158.068Zm0,6.616H7.561a1.418,1.418,0,0,1,0-2.835H31.19a1.418,1.418,0,0,1,0,2.835Z" transform="translate(0 -142)" fill="#f6b333"/>
-      </g>
-    </g>
+    <svg xmlns="http://www.w3.org/2000/svg" width="104.348" height="85.495" viewBox="0 0 104.348 85.495">
+  <g id="books" transform="translate(0 -46.252)">
+    <path id="Path_4403" data-name="Path 4403" d="M149.556,64.614h-3.264V52.373h3.264a3.06,3.06,0,1,0,0-6.121H72.865a12.241,12.241,0,1,0,0,24.482h3.065v-9.17a3.06,3.06,0,0,1,3.06-3.06h18.29a3.06,3.06,0,0,1,3.06,3.06v9.17c3.217,0,44.307.036,49.215,0a3.06,3.06,0,1,0,0-6.12Z" transform="translate(-48.269)" fill="#2a5798"/>
+    <path id="Path_4404" data-name="Path 4404" d="M177.93,145.8v-9.4H165.76v9.338c1.934-1.123,3.265-2.8,6.018-2.8C174.516,142.939,175.836,144.593,177.93,145.8Z" transform="translate(-131.977 -71.775)" fill="#f6b333"/>
+    <path id="Path_4405" data-name="Path 4405" d="M149.556,351.742a3.06,3.06,0,1,0,0-6.121H124.844v3.264a3.062,3.062,0,0,1-4.75,2.552l-7.522-4.981-7.368,4.967a3.064,3.064,0,0,1-4.771-2.538v-3.264H72.865a12.241,12.241,0,1,0,0,24.482h76.691a3.06,3.06,0,1,0,0-6.121h-3.264V351.741h3.264Z" transform="translate(-48.269 -238.356)" fill="#2a5798"/>
+    <path id="Path_4406" data-name="Path 4406" d="M52.165,210.795a3.06,3.06,0,0,1,3.06-3.06h18.29a3.06,3.06,0,0,1,3.06,3.06v9.15h3.175a12.241,12.241,0,1,0,0-24.482H52.073v3.06a3.062,3.062,0,0,1-4.752,2.55l-7.52-4.988-7.366,4.974a3.064,3.064,0,0,1-4.773-2.536v-3.06H3.06a3.06,3.06,0,1,0,0,6.121H6.325v12.241H3.06a3.06,3.06,0,1,0,0,6.121c.761,0,36.538,0,49.1,0Z" transform="translate(0 -118.801)" fill="#f6b333"/>
+    <path id="Path_4407" data-name="Path 4407" d="M292.006,292.632c2.737,0,4.056,1.651,6.151,2.853v-9.778h-12.17v9.721c1.942-1.126,3.267-2.8,6.019-2.8Z" transform="translate(-227.702 -190.654)" fill="#f6b333"/>
   </g>
 </svg>
 
@@ -815,6 +809,7 @@ const NotProvidedWorkExp = () => {
     <path id="Path_4401" data-name="Path 4401" d="M47.421,54.263a4.145,4.145,0,0,0-.884,4.594,5.137,5.137,0,0,0,4.5,3.159,4.1,4.1,0,0,0,2.906-1.233l1.852-1.851-6.52-6.52Z" transform="translate(32.498 32.741)" fill="#f6b333"/>
   </g>
 </svg>
+
 
   );
 }

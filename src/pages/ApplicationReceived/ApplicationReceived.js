@@ -31,7 +31,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import SearchIcon from "@material-ui/icons/Search";
 import ApplicationSavedEmpty from "./ApplicationSavedEmpty";
-import ApplicationSavedBoxListActivate from "./ApplicationSavedBoxListActivate";
+import ApplicationSavedBoxListActive from "./ApplicationSavedBoxListActive";
 import ApplicationSavedList from "./ApplicationSavedList";
 import ApplicationBoxDropdown from "./ApplicationBoxDropdown";
 import JIElogo from "../../images/JIE_logo.svg";
@@ -344,7 +344,7 @@ function ApplicationReceived() {
                   </Typography>
                   <Box
                     component="div"
-                    className="dis_flex fullwidth_100percent"
+                    className="dis_flex topheader fullwidth_100percent"
                   >
                     <Autocomplete
                       debug
@@ -371,9 +371,6 @@ function ApplicationReceived() {
                         return <TextField {...params} />;
                       }}
                     />
-                    <Button className="darkbluecolor whitecolortext border8 pe-4 ps-4">
-                      Search
-                    </Button>
                   </Box>
                 </Grid>
                 <Grid item md={3}>

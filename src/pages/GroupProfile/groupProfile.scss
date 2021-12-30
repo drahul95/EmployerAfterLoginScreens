@@ -1,9 +1,41 @@
 body {
-  .postajobcontent {
+  .groupprofile {
+    .groupandcontarea {
+      .addbutton-mob {
+        display: none;
+      }
+    }
     .common-accordion {
       margin: 15px 0 0 !important;
       .MuiAccordion-rounded {
         margin-bottom: 16px;
+        padding-top: 0;
+        .MuiAccordionSummary-expandIcon {
+          margin-top: 5px;
+        }
+        .MuiAccordionSummary-content {
+          margin-bottom: 5px;
+          .editarea {
+            .mobdots {
+              display: none;
+              .mobdostbtn {
+                padding: 7px;
+              }
+            }
+          }
+          .editareabox {
+            align-items: center;
+            .mobdots {
+              display: none;
+              .mobdostbtn {
+                padding: 7px;
+              }
+            }
+          }
+        }
+        .Mui-expanded {
+          margin: 7px 0;
+        }
       }
       .MuiAccordion-root {
         &::before {
@@ -205,7 +237,7 @@ body {
       text-overflow: ellipsis;
     }
     .titleheadervetting {
-      display: inline-flex;
+      display: block;
       width: 30%;
       overflow: hidden;
       white-space: nowrap;
@@ -279,10 +311,12 @@ body {
       }
       .multilist {
         display: flex;
+        flex-wrap: wrap;
         .confirmed {
           background-color: #2a5798;
           padding: 6px 16px;
           margin-right: 12px;
+          margin-bottom: 15px;
           color: #fff;
           border-radius: 30px;
         }
@@ -290,6 +324,7 @@ body {
           background-color: #2a5798;
           padding: 6px 16px;
           margin-right: 12px;
+          margin-bottom: 15px;
           color: #fff;
           border-radius: 30px;
           opacity: 0.7;
@@ -640,10 +675,10 @@ body {
       border-radius: 16px;
       padding: 12px 20px;
     }
-    .groupnamenoneditable{
+    .groupnamenoneditable {
       display: none;
     }
-    
+
     .gourpeditable {
       form {
         width: 342px;
@@ -732,6 +767,211 @@ body {
   @media (min-width: 1500px) {
     .MuiContainer-maxWidthXl {
       max-width: 1500px;
+    }
+  }
+  @media (max-width: 1400px) {
+    .groupprofile {
+      .groupandcontarea {
+        .group_detailsdiv {
+          .groupbox {
+            .groupheader {
+              flex-wrap: wrap;
+              h4 {
+                font-size: 0.875rem;
+              }
+              span {
+                flex-basis: 100%;
+                margin-left: 33px !important;
+              }
+            }
+          }
+        }
+        .contact_detailsdiv {
+          .contactbox {
+            .contactheader {
+              flex-wrap: wrap;
+              h4 {
+                font-size: 0.875rem;
+              }
+              span {
+                flex-basis: 100%;
+                margin-left: 36px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1279px) {
+    .groupprofile {
+      .groupandcontarea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .group_detailsdiv {
+          flex-basis: 64%;
+          margin: 15px 0 0;
+          .groupbottomtarea {
+            .group_bottomdiv2 {
+              height: 65px;
+            }
+          }
+        }
+        .contact_detailsdiv {
+          flex-basis: 34%;
+          margin: 15px 0 0;
+        }
+        .addbutton {
+          width: 100%;
+          margin: 15px 0 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .groupprofile {
+      .tabnumber {
+        padding: 7px;
+        font-size: 0.688rem;
+      }
+      .titleheadervetting {
+        width: 100%;
+      }
+      .titleareabox {
+        width: 55%;
+      }
+      .titleheader {
+        width: 100%;
+        font-size: 0.875rem;
+      }
+      .topheader {
+        display: block;
+        .CollegeTitle {
+          h4 {
+            margin-top: 10px;
+            line-height: 1.3em;
+          }
+        }
+      }
+      .detailsarea {
+        display: block;
+        .detailsdiv {
+          margin-top: 15px;
+          svg {
+            flex-basis: 10%;
+          }
+          .detailscont {
+            flex-basis: 90%;
+          }
+        }
+      }
+      .detailsareasingle {
+        width: 100%;
+        overflow: hidden;
+        .divarea {
+          width: 90%;
+          .multilist {
+            display: block;
+            width: 75%;
+            .confirmed {
+              display: block;
+              margin-bottom: 10px;
+              font-size: 0.875rem;
+              span {
+                width: 60%;
+                overflow: hidden;
+                display: block;
+                text-overflow: ellipsis;
+                white-space: pre;
+              }
+            }
+            .pending {
+              display: flex;
+              margin-bottom: 10px;
+              font-size: 0.875rem;
+              span {
+                width: 35%;
+                overflow: hidden;
+                display: block;
+                text-overflow: ellipsis;
+                white-space: pre;
+              }
+              span.pendingtext {
+                display: block;
+                width: 100%;
+                overflow: visible;
+                margin: 0 0 0 auto;
+                text-overflow: unset;
+                white-space: normal;
+                width: fit-content;
+              }
+            }
+          }
+        }
+      }
+      .groupandcontarea {
+        .addbutton {
+          display: none;
+        }
+        .addbutton-mob {
+          display: block;
+          position: fixed;
+          bottom: 30px;
+          right: 20px;
+          z-index: 3;
+          height: 60px;
+          background: #2a5798;
+          padding: 20px 10px;
+          border-radius: 30px;
+          svg {
+            margin-right: 0 !important;
+          }
+        }
+        .group_detailsdiv {
+          flex-basis: 100%;
+        }
+        .contact_detailsdiv {
+          flex-basis: 100%;
+        }
+      }
+      .common-accordion {
+        .MuiAccordion-rounded {
+          .MuiAccordionSummary-content {
+            width: 90%;
+            .vettingmsg {
+              display: none;
+            }
+            .editarea {
+              display: block;
+              .webbuttonsarea,
+              .edittimediv {
+                display: none;
+              }
+              .mobdots {
+                display: block;
+              }
+              .edittext {
+                top: 0;
+                transform: none;
+                margin-bottom: 15px;
+              }
+              margin-top: 0px !important;
+              margin-left: 50px !important;
+            }
+            .editareabox {
+              .mobdots {
+                display: block;
+              }
+              .webbuttonsarea {
+                display: none;
+              }
+              margin-top: 0px !important;
+              margin-left: 50px !important;
+            }
+          }
+        }
+      }
     }
   }
 }

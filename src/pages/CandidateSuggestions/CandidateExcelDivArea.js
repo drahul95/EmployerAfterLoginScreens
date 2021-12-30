@@ -54,7 +54,7 @@ function CandidateExcelDivArea() {
                 className="holdbtn whitecolortext border8 pe-4 ps-4"
                 startIcon={<GoogleSheetsIcon />}
               >
-                Google Sheets
+                G-Sheet
               </Button>
               <Button
                 className="greencolor whitecolortext border8 pe-4 ps-4 me-3"

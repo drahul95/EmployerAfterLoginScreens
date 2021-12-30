@@ -359,12 +359,12 @@ function CandidateSuggestionsDemo() {
                         params.inputProps.className = "noborderinput_caret";
                         params.InputProps.className = "noBeforeAfter";
                         params.InputProps.placeholder = "Search";
-                        params.InputProps.endAdornment = null;
                         params.InputProps.startAdornment = (
                           <>
                             <InputAdornment position="start">
                               {<SearchIcon className="left-3" />}
                             </InputAdornment>
+                            
                             {params.InputProps.startAdornment}
                           </>
                         );

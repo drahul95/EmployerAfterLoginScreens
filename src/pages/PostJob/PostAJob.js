@@ -28,7 +28,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import PostBG from "../../images/postajob_bg.svg";
 import { withStyles } from "@material-ui/core/styles";
 import NoCreditsModal from "../NoCredits/NoCredits";
-import UsingCreditsModalJobPost from "../UsingCreditsModal/UsingCreditsModalJobPost"
+import UsingCreditsModalJobPost from "../UsingCreditsModal/UsingCreditsModalJobPost";
 
 require("dotenv").config();
 const BASE_URL = process.env.REACT_APP_BASE_URL;
@@ -2784,7 +2784,7 @@ function PostAJob() {
           timeout: 500,
         }}
       >
-        <UsingCreditsModalJobPost/>
+        <UsingCreditsModalJobPost />
       </Modal>
 
       {/* Dont have enough Credit Modal */}
@@ -2801,10 +2801,10 @@ function PostAJob() {
         }}
       >
         <Fade in={openmodalNoCredits}>
-          <NoCreditsModal/>
+          <NoCreditsModal />
         </Fade>
       </Modal>
-      
+
       {/* Successfull job post modal */}
       <Modal
         aria-labelledby="transition-modal-title"
@@ -4076,13 +4076,11 @@ const EyeIcon = () => {
   );
 };
 
-
 const coaching = [
   { name: "DPS School, Darjeeling", id: 1 },
   { name: "DPS School, Siliguri", id: 2 },
   { name: "DPS School, Durgapur", id: 3 },
 ];
-
 
 const experience = [
   { name: "No Experience", id: 1 },
